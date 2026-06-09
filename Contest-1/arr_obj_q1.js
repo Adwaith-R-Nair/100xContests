@@ -7,7 +7,7 @@ const transactions = [
 // console.log(transactions[0].amount)
 // console.log(transactions[0].user)
 
-const user_transactions = []
+const user_transactions = {}
 
 for(let i = 0; i < transactions.length; i++){
     const {user, amount} = transactions[i];
