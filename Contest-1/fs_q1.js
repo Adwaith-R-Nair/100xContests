@@ -7,6 +7,7 @@ fs.readFile('users.json', 'utf-8', (err, data) => {
     }
 
     const users = JSON.parse(data);
+    // console.log(users);
     let emailOutput = "";
 
     for (let i = 0; i < users.length; i++){
@@ -19,6 +20,7 @@ fs.readFile('users.json', 'utf-8', (err, data) => {
             emailOutput += email + "\n";
         }
     }
+    // console.log(emailOutput);
 
     fs.writeFile('email.txt', emailOutput, (err) => {
         if (err){
